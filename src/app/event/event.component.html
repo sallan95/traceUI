@@ -1,10 +1,11 @@
-<h2>Households</h2>
+<h2>Events</h2>
 
 <li *ngFor="let obj of httpdata">{{obj | json}}</li> <!--How to output json. used for dev-->
 
 <ul *ngFor = "let data of httpdata" style="list-style-type:none;">
     <li>Name : {{data.name}}</li>
-    <li>Address : {{data.address}}</li>
+    <li>Risk : {{data.risk_id}}</li>
+    <li>Date : {{data.event_date}}</li>
   </ul>
 
   <!--

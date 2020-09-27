@@ -1,10 +1,10 @@
-<h2>Households</h2>
+<h2>Risks</h2>
 
 <li *ngFor="let obj of httpdata">{{obj | json}}</li> <!--How to output json. used for dev-->
 
 <ul *ngFor = "let data of httpdata" style="list-style-type:none;">
     <li>Name : {{data.name}}</li>
-    <li>Address : {{data.address}}</li>
+    <li>Risk Score : {{data.riskScore}}</li>
   </ul>
 
   <!--
@@ -18,3 +18,9 @@
 
 
 </div> -->
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

@@ -1,15 +1,13 @@
-import { EntityApiService } from '../entityapi.service';
 import { Component, OnInit } from '@angular/core';
-
+import { EntityApiService } from '../entityapi.service';
 
 
 @Component({
-  selector: 'app-household',
-  templateUrl: './household.component.html',
-  styleUrls: ['./household.component.css']
+  selector: 'app-people',
+  templateUrl: './people.component.html',
+  styleUrls: ['./people.component.css']
 })
-
-export class HouseholdComponent implements OnInit {
+export class PeopleComponent implements OnInit {
 
   httpdata;
 
@@ -19,7 +17,7 @@ export class HouseholdComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.refreshObjects('households');
+    this.refreshObjects('peoples');
   }
 
 

@@ -1,0 +1,8 @@
+<h2>Interactions</h2>
+
+<li *ngFor="let obj of httpdata">{{obj | json}}</li> <!--How to output json. used for dev-->
+
+<ul *ngFor = "let data of httpdata" style="list-style-type:none;">
+    <li>Person : {{data.person_id}}</li>
+    <li>Event : {{data.event_id}}</li>
+  </ul>

@@ -8,11 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
-import { ShippingComponent } from './shipping/shipping.component';
 import { HouseholdComponent } from './household/household.component';
+import { RisksComponent } from './risks/risks.component';
+import { PeopleComponent } from './people/people.component';
+import { EventComponent } from './event/event.component';
+import { InteractionComponent } from './interaction/interaction.component';
+
 
 @NgModule({
   imports: [
@@ -21,21 +23,24 @@ import { HouseholdComponent } from './household/household.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
       { path: 'households', component: HouseholdComponent },
+      { path: 'risks', component: RisksComponent },
+      { path: 'people', component: PeopleComponent},
+      { path: 'events', component: EventComponent},
+      { path: 'interactions', component: InteractionComponent},
     ])
   ],
-  declarations: [			
+  declarations: [					
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent,
-    ProductDetailsComponent,
     CartComponent,
-    ShippingComponent,
-    HouseholdComponent
+    HouseholdComponent,
+    RisksComponent,
+    PeopleComponent,
+    EventComponent,
+    InteractionComponent,
    ],
   bootstrap: [ AppComponent ]
 })
