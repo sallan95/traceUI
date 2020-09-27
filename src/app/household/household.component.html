@@ -1,0 +1,25 @@
+<h2>Households</h2>
+
+<p>Test</p>
+
+<ul *ngFor = "let data of httpdata">
+    <li>Name : {{data.name}}</li>
+  </ul>
+
+  <!--
+<div *ngFor="let household of households; index as productId">
+    <h3>
+        <a>productId</a>
+        <a [title]="household.name + ' details'" [routerLink]="['/products', productId]">
+            {{ household.name }}
+        </a>
+    </h3>
+
+
+</div> -->
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
